@@ -21,7 +21,6 @@ try:
     if Income_Tax == 0.1 or Income_Tax == 0.12:
         Tax_Cut = 0.01
         Income_Tax_Child = Income_Tax - (0.01 * Num_Children)
-        print(Income_Tax_Child)
     else:
         Tax_Cut = 0.005
         Income_Tax_Child = Income_Tax - (0.005 * Num_Children)
