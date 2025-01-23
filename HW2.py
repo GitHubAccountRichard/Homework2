@@ -13,7 +13,6 @@ try:
         Income_Tax = 0.18
 except ValueError:
     print("Please enter a valid number")
-
 try:
     Num_Children = int(input(f"Your Gross Income places you in a tax bracket with {Income_Tax} income tax, how many children do you have? "))
     while Num_Children < 0:
@@ -28,6 +27,5 @@ try:
         Income_Tax_Child = Income_Tax - (0.005 * Num_Children)
 except ValueError:
     print("Please enter a valid number")
-
 net_income = GrossSalary * (1-Income_Tax_Child)
 print(f"Your net income is: {net_income}")
